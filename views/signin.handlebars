@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
     <title>Sign In</title>
 </head>
-<body>
-    
+<body class="h-screen flex items-center justify-center text-white bg-gradient-to-r from-cyan-400 to-blue-600">
+    <nav class="px-6 py-4 text-[#c9d7e3] fixed top-0 w-screen">
+        <ul>
+            <li class="text-white"><a href="/">Example Site</a></li>
+        </ul>
+    </nav>
+    <section class="bg-gray-900/90 p-12 rounded-sm flex flex-col gap-10 text-center">
+        <h1 class="text-xl">Sign In</h1>
+        <form class="flex flex-col gap-4">
+            <input type="text" id="email" name="email" placeholder="Email" class="bg-black/50 px-4 py-2 rounded-sm border-none focus:outline outline-blue-600 outline-offset-2 outline-2">
+            <input type="password" id="password" name="password" placeholder="Password" class="bg-black/50 px-4 py-2 rounded-sm border-none focus:outline outline-blue-600 outline-offset-2 outline-2">
+            <span class="text-left">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me" class="text-sm">Remember Me</label>
+            </span>
+            <input type="submit" value="Submit" class="bg-sky-600 p-2 rounded-sm hover:cursor-pointer mt-6">
+        </form>
+        <p class="text-sm">Don't have an account? <a href="/signup" class="text-sky-600">Sign Up</a> here.</p>
+    </section>
 </body>
 </html>
